@@ -1,0 +1,35 @@
+.bottom-label {
+  margin: rem(8px 0 8px);
+  font-size: rem(12px);
+  font-weight: $font-weight-normal;
+  line-height: (14px);
+}
+
+.input-container {
+  .password-toggle-input {
+    padding-right: rem(55px);
+  }
+}
+
+.show-hide-button {
+  font-family: $font-family;
+  color: $primary;
+  font-size: rem(12px);
+  font-weight: $font-weight-light-bold;
+  line-height: rem(15px);
+  min-width: 0;
+  padding: 0;
+  display: block;
+  right: rem(14px);
+  margin-top: rem(-25px);
+  position: relative;
+  float: right;
+}
+
+.caption {
+  color: $gray;
+  font-size: rem(12px);
+  font-style: italic;
+  line-height: rem(16px);
+  margin: rem(8px 0);
+}

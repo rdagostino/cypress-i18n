@@ -1,0 +1,49 @@
+label,
+.label {
+  color: $gray;
+  display: block;
+  font-size: rem(14px);
+  font-weight: $font-weight-normal;
+  margin: rem(0 0 8px);
+  position: relative;
+
+  &.radio {
+    align-items: center;
+    color: $black;
+    display: flex;
+    margin: rem(0 16px 0 0);
+  }
+
+  &.checkbox {
+    align-items: center;
+    color: $gray;
+    cursor: pointer;
+    display: flex;
+    margin: rem(24px 0);
+
+    &.disabled {
+      color: $gray;
+      cursor: default;
+    }
+
+    &--terms {
+      align-items: flex-start;
+      color: $black;
+      line-height: rem(20px);
+    }
+
+    input {
+      width: auto;
+      margin-right: rem(10px);
+    }
+  }
+
+  .required {
+    color: $required;
+    font-size: rem(18px);
+    font-weight: $font-weight-bold;
+    margin: 0;
+    position: absolute;
+    top: -2px;
+  }
+}

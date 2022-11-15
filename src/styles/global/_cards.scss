@@ -1,0 +1,158 @@
+// Used for card tiles.
+.card {
+  border: 1px solid $gray-light;
+  border-radius: rem(4px);
+  display: flex;
+  flex-direction: column;
+  margin: rem(0 0 24px);
+  padding: rem(16px);
+  position: relative;
+  width: 100%;
+  word-break: break-word;
+
+  &--cursor {
+    cursor: pointer;
+  }
+
+  &--loader {
+    height: 140px;
+  }
+
+  &--address {
+    min-height: 234px;
+  }
+
+  &__without-border {
+    border: unset;
+    margin-top: rem(20px);
+
+    @include breakpoint-up(lg) {
+      margin-left: rem(25px);
+    }
+  }
+
+  &--payment {
+    flex-flow: row;
+    flex-wrap: wrap;
+    min-height: rem(162px);
+  }
+
+  &--payment-add {
+    @include center;
+
+    min-height: rem(162px);
+    color: $primary;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &__text {
+      margin-top: rem(8px);
+    }
+  }
+
+  &--centered {
+    justify-content: center;
+  }
+
+  &__title {
+    line-height: rem(24px);
+    margin: rem(0 0 8px);
+    overflow-wrap: break-word;
+
+    &--emphasis {
+      font-size: rem(26px);
+      font-weight: $font-weight-light;
+      margin: rem(0 0 16px);
+    }
+  }
+
+  &__callout {
+    display: block;
+    font-size: rem(14px);
+    font-weight: $font-weight-bold;
+    margin: rem(0 0 16px);
+    text-transform: uppercase;
+  }
+
+  &__address {
+    display: block;
+    font-size: rem(16px);
+    line-height: rem(24px);
+  }
+
+  &__edit-button {
+    margin-top: rem(16px);
+  }
+
+  &__payment-logo {
+    padding: rem(0 8px);
+    min-width: rem(40px);
+  }
+
+  &__payment-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: rem(0 8px);
+
+    &__text {
+      padding-bottom: rem(8px);
+    }
+
+    &__title {
+      font-size: rem(20px);
+      padding-bottom: rem(8px);
+      overflow-wrap: break-word;
+      word-break: break-all;
+    }
+
+    &__button {
+      align-items: flex-end;
+      display: flex;
+      flex-grow: 1;
+      font-size: rem(14px);
+      margin-right: rem(16px);
+    }
+  }
+
+  &__payment-default {
+    flex: 0 0 100%;
+    font-size: rem(12px);
+    font-weight: $font-weight-bold;
+    padding: rem(0 8px);
+    text-transform: uppercase;
+  }
+
+  &__link-container {
+    margin-top: rem(10px);
+    padding: rem(24px 0 0);
+
+    &--payment {
+      padding: rem(16px 0 0);
+    }
+  }
+
+  &__link-btn {
+    font-size: rem(14px);
+    margin: rem(0 24px 0 0);
+  }
+
+  &__confirm {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    left: 0;
+    padding: rem(0 16px);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+
+    &__btn {
+      align-self: center;
+      width: 48%;
+    }
+  }
+}

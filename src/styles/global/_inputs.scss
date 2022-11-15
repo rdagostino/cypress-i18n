@@ -1,0 +1,26 @@
+input,
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+input[type='date'],
+textarea {
+  border-radius: 6px;
+  border: 1px solid #a8a8a8;
+  color: $black;
+  font-size: rem(16px);
+  line-height: 1;
+  padding: rem(8px 12px);
+  width: 100%;
+  font-family: sans-serif;
+
+  &:disabled {
+    color: $disabled;
+    pointer-events: none;
+  }
+
+  &::-ms-reveal,
+  &::-ms-clear {
+    display: none;
+  }
+}

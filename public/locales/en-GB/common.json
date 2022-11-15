@@ -1,0 +1,28 @@
+{
+  "form": {
+    "buttons": {
+      "createAccount": "Create an account",
+      "submit": "Submit"
+    },
+    "errors": {
+      "password": "Please enter a password.",
+      "username": "Username needs to be 8 or 10 digits."
+    },
+    "labels": {
+      "password": "Password",
+      "username": "Username"
+    }
+  },
+  "links": {
+    "forgotPassword": "Forgot Password"
+  },
+  "pages": {
+    "login": {
+      "bannerText": "Your Customer Number is your MSD Animal Health Customer Account Number.  You can find this number in the top right hand box of any invoice you receive from MSD Animal Health.   If you do not have a MSD Animal Health Customer Account Number, please contact HomeAgain Customer Support on 01954 774433. Agents are available 24/7 to assist.",
+      "dontHaveAnAccount": "Don't Have an Account?"
+    }
+  },
+  "titles": {
+    "login": "Login"
+  }
+}

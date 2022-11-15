@@ -1,0 +1,27 @@
+// Pixel to rem support.
+@import '~sass-rem';
+
+// Responsiveness
+@mixin breakpoint-up($screen) {
+  @media screen and (min-width: map-get($grid-breakpoints, $screen)) {
+    @content;
+  }
+}
+
+@mixin until($screen) {
+  @media screen and (max-width: map-get($grid-breakpoints, $screen) - 1px) {
+    @content;
+  }
+}
+
+@mixin center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin element-border-bottom {
+  border-bottom: 1px solid $gray-light;
+  margin: rem(0 0 24px);
+  padding: rem(0 0 16px);
+}

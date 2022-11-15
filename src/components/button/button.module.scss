@@ -1,0 +1,19 @@
+.spinner::before {
+  animation: spinner 1s linear infinite;
+  border-radius: 50%;
+  border-right: 2px solid transparent;
+  border-top: 2px solid $primary;
+  content: '';
+  height: 20px;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

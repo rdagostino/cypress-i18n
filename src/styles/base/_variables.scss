@@ -1,0 +1,46 @@
+// Add all base style guide info into here.
+// Baseline font size. To be updated for global changes.
+$rem-baseline: 16px;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1368px,
+) !default;
+
+// Colors.
+$primary: #00588f;
+$black: #231f20;
+$white: #fff;
+$blue: #47d1da;
+$gray: #686868;
+$gray-dark: #838588;
+$gray-light: #dedede;
+$disabled: #767b7f;
+$danger: #f5c6cb;
+$danger-text: #721c24;
+$required: #db0a15;
+$success: #c3e6cb;
+$success-text: #134e21;
+$warning: #ffeeba;
+$warning-text: #876603;
+$banner-primary: #0586cc;
+$banner-secondary: #feb902;
+
+// Typography.
+$font-family: 'Lato', sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-light-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 900;

@@ -1,0 +1,165 @@
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn {
+  align-self: flex-start;
+  background-color: $primary;
+  border-radius: rem(4px);
+  border: 1px solid transparent;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(14px);
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  margin: rem(0 0 16px 0);
+  min-height: 36px;
+  min-width: 92px;
+  overflow: hidden;
+  padding: rem(10px);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 5%);
+    color: $white;
+    text-decoration: none;
+  }
+
+  @include breakpoint-up(md) {
+    max-width: 324px;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $gray-light;
+    pointer-events: none;
+
+    &:focus,
+    &:hover {
+      background-color: $gray-light;
+    }
+  }
+
+  // Modifier for outlining.
+  &--secondary {
+    background-color: $white;
+    border-color: $primary;
+    color: $primary;
+
+    &:focus,
+    &:hover {
+      border-color: darken($primary, 5%);
+    }
+  }
+
+  // Modifier used for warnings.
+  &--danger {
+    background-color: $required;
+
+    &:focus,
+    &:hover {
+      background-color: darken($required, 5%);
+    }
+
+    &--outline {
+      border: 1px solid $white;
+      margin: 0;
+    }
+  }
+
+  // Modifier for full width buttons.
+  &--full-width {
+    display: block;
+    width: 100%;
+
+    @include breakpoint-up(md) {
+      margin-right: rem(20px);
+    }
+  }
+
+  &--normal {
+    max-width: none;
+    width: auto;
+  }
+
+  // Normal button used a link
+  &--text {
+    background: transparent;
+    color: $primary;
+    font-size: rem(12px);
+    font-weight: $font-weight-bold;
+    line-height: rem(15px);
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    transition: color 0.25s ease-in-out;
+    width: auto;
+
+    &:focus,
+    &:hover {
+      background: none;
+      color: darken($primary, 5%);
+    }
+
+    &:disabled,
+    &.disabled {
+      background: transparent;
+      color: $gray-light;
+      pointer-events: none;
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include breakpoint-up(md) {
+    flex-direction: row;
+    max-width: 440px;
+  }
+
+  &--row-reverse {
+    flex-direction: column-reverse;
+
+    @include breakpoint-up(lg) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &.dialog {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 470px;
+    padding: rem(24px 16px);
+
+    @include breakpoint-up(md) {
+      max-width: none;
+    }
+
+    .btn {
+      order: 1;
+
+      &:first-child {
+        order: 2;
+      }
+
+      @include breakpoint-up(md) {
+        &:first-child {
+          order: 1;
+          width: auto;
+        }
+      }
+    }
+  }
+}

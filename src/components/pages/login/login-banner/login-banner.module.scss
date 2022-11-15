@@ -1,0 +1,9 @@
+.banner-wrapper {
+  background-color: $gray-light;
+  border-radius: rem(6px);
+  color: darken($primary, 5%);
+  display: flex;
+  justify-content: center;
+  margin: rem(-8px 0 24px 0);
+  padding: rem(15px);
+}

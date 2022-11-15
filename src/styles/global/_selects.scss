@@ -1,0 +1,28 @@
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #808080 50%),
+    linear-gradient(135deg, rgb(128, 128, 128) 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-repeat: no-repeat;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  border-radius: 6px;
+  border: 1px solid #a8a8a8;
+  color: $black;
+  cursor: pointer;
+  font-size: rem(16px);
+  line-height: 1;
+  padding: rem(10px 12px);
+  width: 100%;
+
+  &:disabled {
+    color: $disabled;
+    min-width: 100%;
+    pointer-events: none;
+  }
+
+  &.input-error.input {
+    background-color: rgba(219, 10, 21, 15%);
+    border: 1px solid $danger;
+  }
+}

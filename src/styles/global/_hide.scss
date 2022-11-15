@@ -1,0 +1,16 @@
+@include until(lg) {
+  .is-hidden-mobile {
+    display: none;
+  }
+}
+
+@include breakpoint-up(lg) {
+  // Hide for Desktop Devices
+  .is-hidden-desktop {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}

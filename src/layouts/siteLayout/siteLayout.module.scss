@@ -1,0 +1,12 @@
+.main {
+  &__container {
+    &__content {
+      min-height: 400px;
+      padding: rem(32px 0);
+
+      &__row {
+        height: 100%;
+      }
+    }
+  }
+}
